@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Roreeh's Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #0f0f0f;
+      color: #d0ffd0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #111;
+      color: #00ff88;
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 2px solid #00ff88;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #00ff88;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #00ff88;
+      padding-bottom: 10px;
+    }
+
+    .skills ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skills li {
+      background: #00cc66;
+      color: black;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .projects .project {
+      background: #1a1a1a;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-left: 5px solid #00ff88;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #00ff88;
+      border-radius: 4px;
+      background-color: #121212;
+      color: #d0ffd0;
+    }
+
+    form button {
+      background: #00ff88;
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      color: #d0ffd0;
+    }
+
+    table, th, td {
+      border: 1px solid #00ff88;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+      background-color: #1a1a1a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: #00ff88;
+      border-top: 2px solid #00ff88;
+    }
+
+    @media (max-width: 600px) {
+      .skills ul {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Rehan's Portfolio</h1>
+    <p>Game Developer | Roblox Scripter | YouTuber</p>
+  </header>
+
+  <section class="introduction">
+    <h2>Introduction</h2>
+    <p>Hello! I’m Rehan, or you can call me Roreeh/DevShastra — a passionate game developer and content creator. I work on Roblox games, create cool scripting systems, and love building things from scratch. I’m currently working on <strong>InfectiMon: Flukora’s Secrets</strong>, my biggest game project yet!</p>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Roblox Lua Scripting</li>
+      <li>UI/UX Design</li>
+      <li>HTML & CSS</li>
+      <li>Game Design</li>
+      <li>Team Collaboration</li>
+      <li>ProfileService</li>
+    </ul>
+  </section>
+
+  <section class="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>InfectiMon: Flukora’s Secrets</h3>
+      <p>A full-fledged tower defense + Pokémon-style game on Roblox. Features unique towers, semi-open world map, level-up system, and MUCH MORE!</p>
+    </div>
+    <div class="project">
+      <h3>DEVSHASTRA YouTube Channel</h3>
+      <p>Gaming & development content — from Minecraft Bedwars to Roblox dev tutorials and behind-the-scenes of my games. Right now only some videos have been uploaded.</p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Type your message..." required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <section class="schedule">
+    <h2>Weekly Timetable</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Morning</th>
+          <th>Afternoon</th>
+          <th>Evening</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>Roblox Scripting</td>
+          <td>Content Planning</td>
+          <td>Editing Videos</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>Bug Fixes</td>
+          <td>Game Testing</td>
+          <td>Live Streaming</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>New Feature Dev</td>
+          <td>Thumbnail Creation</td>
+          <td>Recording Gameplay</td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>Map Design</td>
+          <td>UI Tweaks</td>
+          <td>Upload YouTube Video</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>VFX Setup</td>
+          <td>Inventory Polish</td>
+          <td>Content Review</td>
+        </tr>
+        <tr>
+          <td>Saturday</td>
+          <td>Brainstorming Ideas</td>
+          <td>Collab with Devs</td>
+          <td>Playtesting</td>
+        </tr>
+        <tr>
+          <td>Sunday</td>
+          <td>Break</td>
+          <td>Family Time</td>
+          <td>Light Work</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Rehan | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
