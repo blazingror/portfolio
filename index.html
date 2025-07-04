@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Roreeh's Portfolio</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     * {
       margin: 0;
@@ -108,6 +110,17 @@
       border-top: 2px solid #d6b4fc;
     }
 
+    .social-icons a {
+      color: #d6b4fc;
+      margin: 0 10px;
+      font-size: 20px;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #fff;
+    }
+
     @media (max-width: 600px) {
       .skills ul {
         flex-direction: column;
@@ -122,11 +135,11 @@
     <p>Game Developer | Roblox Scripter | YouTuber</p>
   </header>
 
- <section class="introduction" style="display: flex; align-items: center; flex-direction: column; text-align: center;">
-  <h2>Introduction</h2>
-  <img src="https://github.com/blazingror/portfolio/blob/main/RE_PHOTO.jpeg?raw=true" alt="Roreeh Banner" style="width: 180px; border-radius: 50%; display: block; margin: 0 auto 20px; box-shadow: 0 0 15px #d6b4fc;">
-  <p>Hello! I’m Rehan, or you can call me Roreeh/DevShastra — a passionate game developer and content creator. I work on Roblox games, create cool scripting systems, and love building things from scratch. I’m currently working on <strong>InfectiMon: Flukora’s Secrets</strong>, my biggest game project yet!</p>
-</section>
+  <section class="introduction" style="display: flex; align-items: center; flex-direction: column; text-align: center;">
+    <h2>Introduction</h2>
+    <img src="https://github.com/blazingror/portfolio/blob/main/RE_PHOTO.jpeg?raw=true" alt="Roreeh Banner" style="width: 180px; border-radius: 50%; display: block; margin: 0 auto 20px; box-shadow: 0 0 15px #d6b4fc;">
+    <p>Hello! I’m Rehan, or you can call me Roreeh/DevShastra — a passionate game developer and content creator. I work on Roblox games, create cool scripting systems, and love building things from scratch. I’m currently working on <strong>InfectiMon: Flukora’s Secrets</strong>, my biggest game project yet!</p>
+  </section>
 
   <section class="skills">
     <h2>Skills</h2>
@@ -228,6 +241,11 @@
 
   <footer>
     <p>&copy; 2025 Rehan | All Rights Reserved</p>
+    <div class="social-icons" style="margin-top: 10px;">
+      <a href="https://github.com/blazingror" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/rehan-mehta-31039a362/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/@DevShastraIND" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
   </footer>
 
 </body>
